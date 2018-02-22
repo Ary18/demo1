@@ -70,58 +70,65 @@ window.addEventListener('load', paginaCaricata);
 function paginaCaricata(){
     'use strict';
 
-    var persona = extractRandomUser('it');
-        console.log(persona);
-        var nomePersona = persona.name.first + ' ' + persona.name.last;
-        var headingNomePersona  = 
-            document.getElementById('nome');
-        headingNomePersona.innerText = nomePersona;
+    // var persona = extractRandomUser('it');
+    //     console.log(persona);
+    //     var nomePersona = persona.name.first + ' ' + persona.name.last;
+    //     var headingNomePersona  = 
+    //         document.getElementById('nome');
+    //     headingNomePersona.innerText = nomePersona;
 
-        // var persona = extractRandomUser('it');
-        var luogoPersona = persona.location.street + ' ' + persona.location.city + ' ' + persona.location.postcode + ' ' + persona.location.state;
-        var headingLocationPersona  = 
-            document.getElementById('indirizzo');
-        headingLocationPersona.innerText = luogoPersona;
+    //     var luogoPersona = persona.location.street + ' ' + persona.location.city + ' ' + persona.location.postcode + ' ' + persona.location.state;
+    //     var headingLocationPersona  = 
+    //         document.getElementById('indirizzo');
+    //     headingLocationPersona.innerText = luogoPersona;
 
-        // var persona = extractRandomUser('it');
-        var lavoroPersona = persona.job.type;
-        var headingJobPersona  = 
-            document.getElementById('lavoro');
-        headingJobPersona.innerText = lavoroPersona;
+    //     var lavoroPersona = persona.job.type;
+    //     var headingJobPersona  = 
+    //         document.getElementById('lavoro');
+    //     headingJobPersona.innerText = lavoroPersona;
 
-        // var persona = extractRandomUser('it');
-        var luogoLavoroPersona = persona.job.workplace;
-        var headingWorkPlacePersona  = 
-            document.getElementById('postoDiLavoro');
-        headingWorkPlacePersona.innerText = luogoLavoroPersona;
+    //     var luogoLavoroPersona = persona.job.workplace;
+    //     var headingWorkPlacePersona  = 
+    //         document.getElementById('postoDiLavoro');
+    //     headingWorkPlacePersona.innerText = luogoLavoroPersona;
 
-        // var persona = extractRandomUser('it');
-        var telefonoPersona = persona.phone;
-        var headingPhonePersona  = 
-            document.getElementById('telefono');
-        headingPhonePersona.innerText = telefonoPersona;
+    //     var telefonoPersona = persona.phone;
+    //     var headingPhonePersona  = 
+    //         document.getElementById('telefono');
+    //     headingPhonePersona.innerText = telefonoPersona;
 
-        // var persona = extractRandomUser('it');
-        var emailPersona = persona.email;
-        var headingEmailPersona  = 
-            document.getElementById('e-mail');
-        headingEmailPersona.innerText = emailPersona;
+    //     var emailPersona = persona.email;
+    //     var headingEmailPersona  = 
+    //         document.getElementById('e-mail');
+    //     headingEmailPersona.innerText = emailPersona;
 
-        // var persona = extractRandomUser('it');
-        var nascitaPersona = Persona.dob.substr(8,2) + '/' + Persona.dob.substr(5,2) + '/' + Persona.dob.substr(0,4);
-        var headingDobPersona  = 
-            document.getElementById('nascita');
-            // for (var i=0; i<dob.length; i++){
-            //     headingDobPersona.innerText = nascitaPersona;
-            // }
-        headingDobPersona.innerText = nascitaPersona;
+    //     var nascitaPersona = Persona.dob.substr(8,2) + '/' + Persona.dob.substr(5,2) + '/' + Persona.dob.substr(0,4);
+    //     var headingDobPersona  = 
+    //         document.getElementById('nascita');
+    //     headingDobPersona.innerText = nascitaPersona;
 
-        // var persona = extractRandomUser('it');
-        var fotoPersona = persona.picture.medium;
-        var headingPhotoPersona  = 
-            document.getElementById('foto');
-        headingPhotoPersona.src = fotoPersona;
-    }
+    //     var fotoPersona = persona.picture.medium;
+    //     var headingPhotoPersona  = 
+    //         document.getElementById('foto');
+    //     headingPhotoPersona.src = fotoPersona;
+
+    var url = 'https://randomuser.me/api/?gender=male&results=100&nat=gb';
+    $.getJSON(url,function(data){
+
+    var persona = data.results[0];
+    console.log(persona);
+
+    $('#foto').attr('src',persona.picture.large);
+    $('#nome').text(persona.name.first + ' ' + persona.name.last);
+    $('#lavoro').text(persona.job);
+    $('#telefono').text(persona.cell);
+    $('#indirizzo').text(persona.location.street + ' ' + persona.location.city + ' ' + persona.location.postcode + ' ' + persona.location.state);
+    $('#e-mail').text(persona.email);
+    $('#nascita').text(persona.dob.substr(8,2) + '/' + persona.dob.substr(5,2) + '/' + persona.dob.substr(0,4));
+    
+});
+}
+
 
 
 
