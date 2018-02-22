@@ -10,7 +10,7 @@ gulp.task('jshint',function(){
 });
 
 gulp.task('copiaHtml',function(){
-    gulp.src('source/html/*.html').pipe(gulp.dest('dist'));
-    gulp.src('source/css/*.css').pipe(gulp.dest('dist'));
-    gulp.src('source/javascript/*.js').pipe(gulp.dest('dist'));
+    gulp.src('source/html/*.html').pipe(gulp.dest('dist/html'));
+    gulp.src('source/css/*.css').pipe(gulp.dest('dist/css'));
+    gulp.src('source/javascript/*.js').pipe(gulp.dest('dist/javascript'));
 });
