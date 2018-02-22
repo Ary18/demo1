@@ -71,6 +71,8 @@ window.addEventListener('load', paginaCaricata);
 function paginaCaricata(){
     'use strict';
 
+    $('body').loading('toggle');
+
     // var persona = extractRandomUser('it');
     //     console.log(persona);
     //     var nomePersona = persona.name.first + ' ' + persona.name.last;
@@ -126,7 +128,7 @@ function paginaCaricata(){
     $('#indirizzo').text(persona.location.street + ' ' + persona.location.city + ' ' + persona.location.postcode + ' ' + persona.location.state);
     $('#e-mail').text(persona.email);
     $('#nascita').text(persona.dob.substr(8,2) + '/' + persona.dob.substr(5,2) + '/' + persona.dob.substr(0,4));
-    
+    $('body').loading('toggle');
 });
 }
 
