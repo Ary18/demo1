@@ -108,7 +108,7 @@ function paginaCaricata(){
         headingEmailPersona.innerText = emailPersona;
 
         // var persona = extractRandomUser('it');
-        var nascitaPersona = persona.dob;
+        var nascitaPersona = Persona.dob.substr(8,2) + '/' + Persona.dob.substr(5,2) + '/' + Persona.dob.substr(0,4);
         var headingDobPersona  = 
             document.getElementById('nascita');
             // for (var i=0; i<dob.length; i++){
@@ -121,8 +121,8 @@ function paginaCaricata(){
         var headingPhotoPersona  = 
             document.getElementById('foto');
         headingPhotoPersona.src = fotoPersona;
-
     }
+
 
 
 
