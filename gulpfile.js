@@ -5,6 +5,12 @@ var gutil = require('gulp-util');
 var jshint = require('gulp-jshint');
 
 gulp.task('jshint',function(){
-    return gulp.src('javascript/*.js').pipe(jshint())
+    return gulp.src('source/javascript/*.js').pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
+});
+
+gulp.task('copiaHtml',function(){
+    gulp.src('source/html/*.html').pipe(gulp.dest('dist'));
+    gulp.src('source/css/*.css').pipe(gulp.dest('dist'));
+    gulp.src('source/javascript/*.js').pipe(gulp.dest('dist'));
 });
