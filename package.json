@@ -23,6 +23,7 @@
   "homepage": "https://github.com/Ary18/demo1#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-util": "^3.0.8"
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.5"
   }
 }
