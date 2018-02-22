@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/Ary18/demo1/issues"
   },
-  "homepage": "https://github.com/Ary18/demo1#readme"
+  "homepage": "https://github.com/Ary18/demo1#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1"
+  }
 }
