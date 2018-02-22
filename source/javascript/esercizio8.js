@@ -1,3 +1,4 @@
+/*global $ */
 var Name = {
     title: 'mr.',
     first: 'Mario',
