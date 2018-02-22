@@ -1,0 +1,24 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "description": "progetto demo1",
+  "main": "esercizio8.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ary18/demo1.git"
+  },
+  "keywords": [
+    "Git",
+    "npm",
+    "jshint"
+  ],
+  "author": "Arianna Garassino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ary18/demo1/issues"
+  },
+  "homepage": "https://github.com/Ary18/demo1#readme"
+}
