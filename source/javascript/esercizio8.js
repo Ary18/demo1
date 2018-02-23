@@ -120,6 +120,9 @@ function paginaCaricata(){
     // $.getJSON(url,function(data){
     // var persona = data[0];
 
+    // var url = 'http://localhost:3000/results';  //questo serve per usare il local host
+    // $.getJSON(url,function(data){
+    // var persona = data[0];
     var url = 'https://randomuser.me/api/';
     $.getJSON(url,function(data){
     var persona = data.results[0];
