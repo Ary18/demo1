@@ -64,7 +64,7 @@ var extractRandomUser = function (nazione){
     //tempP.nat = nazione;
     return tempP;
 };
-console.log(extractRandomUser('uk').nat);
+// console.log(extractRandomUser('uk').nat);
 
 window.addEventListener('load', paginaCaricata);
 
@@ -115,9 +115,13 @@ function paginaCaricata(){
     //         document.getElementById('foto');
     //     headingPhotoPersona.src = fotoPersona;
 
-    var url = 'https://randomuser.me/api/?gender=male&results=100&nat=gb';
-    $.getJSON(url,function(data){
 
+    // var url = 'http://localhost:3000/results';  questo serve per usare il local host
+    // $.getJSON(url,function(data){
+    // var persona = data[0];
+
+    var url = 'https://randomuser.me/api/';
+    $.getJSON(url,function(data){
     var persona = data.results[0];
     console.log(persona);
 
@@ -131,6 +135,8 @@ function paginaCaricata(){
     $('body').loading('toggle');
 });
 }
+
+
 
 
 
