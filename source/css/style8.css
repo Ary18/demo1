@@ -24,7 +24,7 @@ main{
 nav{
     order: -1;
     flex: 1 0 20%;
-    border: 3px solid black;
+    border: 3px solid transparent; 
     font-size: 1.5rem;
     padding: 0.5rem;
 }
@@ -32,7 +32,7 @@ nav{
 section{
     flex-basis: 60%;
     flex: 1 0 80%;
-    border: 3px solid black;
+    border: 3px solid transparent; 
     font-size: 1.5rem;
     padding: 0.5rem;
 }
@@ -44,7 +44,7 @@ footer {
     padding: 50px; */
     text-align: center;
     font-size: 1rem;
-    border: 3px solid black;
+    border: 3px solid transparent; 
     padding: 1rem;
 }
 
@@ -53,7 +53,7 @@ header {
     color: white;
     /* padding: 20px; */
     font-size: 2rem;
-    border: 3px solid black;
+    border: 3px solid transparent; 
     padding: 0.5rem;
 }
 
@@ -65,7 +65,7 @@ header {
     border: 3px;
     padding: 20px;
     display: block;
-    width: 50%;
+    width: 80%;
     margin: auto;
     border-style: outset;
     background-color: #347B98;
@@ -87,14 +87,12 @@ div img {
     width: 30px;
     height: 30px;
     border: none;
-    float: left;
 }
 
 #Emoticon {
     width: 30px;
     height: 30px;
     border: none;
-    float: left;
     margin-left: -40px;
 }
 
@@ -146,6 +144,13 @@ div dl {
 #name {
     float: left;
     width: 70%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    font-weight: 100;
+    width: 100%;
+    height: 50px;
+    margin-top: 3%;
 }
 
 
@@ -200,18 +205,39 @@ div dl {
     /* margin-left: 71px; */
     float: left;
     width: 70%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    font-weight: 100;
+    width: 100%;
+    height: 50px;
+    margin-top: 3%;
 }
 
 #phone {
     /*margin-left: 12px*/
     float: left;
-    width: 69.7%;
+    width: 70%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    font-weight: 100;
+    width: 100%;
+    height: 50px;
+    margin-top: 3%;
 }
 
 #data {
     /*margin-left: 40px;*/
     float: left;
-    width: 69.9%;
+    width: 70%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    font-weight: 100;
+    width: 100%;
+    height: 50px;
+    margin-top: 3%;
 }
 
 #dataNascita {
@@ -222,11 +248,25 @@ div dl {
     /*margin-left: 91px;*/
     float: left;
     width: 70%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    font-weight: 100;
+    width: 100%;
+    height: 50px;
+    margin-top: 3%;
 }
 
 #città {
     float: left;
-    width: 70.6%;
+    width: 70%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    font-weight: 100;
+    width: 100%;
+    height: 50px;
+    margin-top: 3%;
     /* height: 45px;
     width: 31.2%;
     margin-left: 71px; */
@@ -237,7 +277,15 @@ textarea {
     width: 30.5%;*/
     height: 110px;
     float: left;
-    width: 69.7%;
+    width: 70%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    font-weight: 100;
+    width: 100%;
+    height: 50px;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 #commento {
@@ -291,6 +339,9 @@ ul {
     /*width: 25%;*/
     list-style-type: none;
     height: 80px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 200px;
 }
 
 li {
