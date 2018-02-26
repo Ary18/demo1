@@ -1,11 +1,60 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
     background-color: #D4EDF7;
+    margin: 0; 
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.HolyGrail {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-grow: 1;
+}
+
+nav{
+    order: -1;
+    flex: 1 0 20%;
+    border: 3px solid black;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+section{
+    flex-basis: 60%;
+    flex: 1 0 80%;
+    border: 3px solid black;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: #347B98;
+    color: white;
+    /* margin-top: 100px;
+    padding: 50px; */
+    text-align: center;
+    font-size: 1rem;
+    border: 3px solid black;
+    padding: 1rem;
 }
 
 header {
     background-color: #347B98;
     color: white;
-    padding: 20px;
+    /* padding: 20px; */
+    font-size: 2rem;
+    border: 3px solid black;
+    padding: 0.5rem;
 }
 
 #riquadro {
@@ -57,14 +106,6 @@ div dl {
     padding: 22px;
     margin-top: 1px;
     float: left;
-}
-
-footer {
-    background-color: #347B98;
-    color: white;
-    margin-top: 100px;
-    padding: 50px;
-    text-align: center;
 }
 
 .inputNome {
