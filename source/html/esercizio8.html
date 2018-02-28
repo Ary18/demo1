@@ -9,101 +9,102 @@
     <script src="../../node_modules/jquery/dist/jquery.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="../../node_modules/jquery-easy-loading/dist/jquery.loading.js"></script>
-    <script src = "../javascript/esercizio8.js"></script>
+    <script src="../javascript/esercizio8.js"></script>
     <!-- <link rel="stylesheet" href="../css/style8.css"> -->
     <link rel="stylesheet" href="../css/styleFlex.css">
-     <link rel="stylesheet" href="../../node_modules/jquery-easy-loading/dist/jquery.loading.css"> 
+    <link rel="stylesheet" href="../../node_modules/jquery-easy-loading/dist/jquery.loading.css">
 </head>
 
 <body>
     <div class="HolyGrail">
         <header>
             <h1>Benvenuti!!</h1>
+            <nav class="navHome">
+                    <ul class="ulHome">
+                        <li class="liHome">HOME</li>
+                        <li class="liHome">Chi siamo</li>
+                        <li class="liHome">Lavora con noi</li>
+                        <li class="liHome">
+                            <a href="../html/esercizio8b.html">Contattaci</a>
+                        </li>
+                    </ul>
+                </nav> 
         </header>
-     <main>
-        <nav class="menu">
-            <ul>
-                <li>HOME</li>
-                <li>Chi siamo</li>
-                <li>Lavora con noi</li>
-                <li><a href="../html/esercizio8b.html">Contattaci</a></li>
-            </ul>
-        </nav>
-
-        <section class="infoSection">
-            <h2 class="titoloInfo">Informazioni personali</h2>
-            <div class="fotoInfo"></div>
+        <main>
+            <section class="infoSection">
+                <h2 class="titoloInfo">Informazioni personali</h2>
+                <div class="fotoInfo"></div>
                 <img class="imageFotoInfo" src="" id="foto">
-            <div class="detailInfo">
-                <dl class="tabellaInfo">
+                <div class="detailInfo">
+                    <dl class="tabellaInfo">
 
-                <div class="rigaTabellaInfo">
-                    <img class="fotoRiga" src="https://images.emojiterra.com/google/android-oreo/512px/1f64b-2642.png">
-                    <dt class="labelRiga">Il mio nome è</dt>
-                    <dd id="nome" class="datoRiga">Carrie Montgomery</dd>
-                </div>
+                        <div class="rigaTabellaInfo">
+                            <img class="fotoRiga" src="https://images.emojiterra.com/google/android-oreo/512px/1f64b-2642.png">
+                            <dt class="labelRiga">Il mio nome è</dt>
+                            <dd id="nome" class="datoRiga">Carrie Montgomery</dd>
+                        </div>
 
-                <div class="rigaTabellaInfo">
-                        <img id="Emoticon" class="fotoRiga" src="http://educazionetecnica.dantect.it/wp-content/uploads/2011/08/COMPASSO.jpg">
-                    <dt class="labelRiga">Il mio lavoro è</dt>
-                    <dd class="datoRiga">
-                    <span itemprop="jobTitle" id="lavoro">Architetto</span> presso
-                    <itemprop="affiliation" id="postoDiLavoro">Architect's group
-                    </dd>
+                        <div class="rigaTabellaInfo">
+                            <img id="Emoticon" class="fotoRiga" src="http://educazionetecnica.dantect.it/wp-content/uploads/2011/08/COMPASSO.jpg">
+                            <dt class="labelRiga">Il mio lavoro è</dt>
+                            <dd class="datoRiga">
+                                <span itemprop="jobTitle" id="lavoro">Architetto</span> presso
+                                <itemprop="affiliation" id="postoDiLavoro">Architect's group
+                            </dd>
+                        </div>
+
+                        <div class="rigaTabellaInfo">
+                            <img class="fotoRiga" src="https://image.freepik.com/icone-gratis/cornetta-del-telefono_318-25259.jpg">
+                            <dt class="labelRiga">Il mio numero di telefono è</dt>
+                            <dd itemprop="telephoneNumber" id="telefono" class="datoRiga">(932)-885-6729</dd>
+                        </div>
+
+                        <div class="rigaTabellaInfo">
+                            <img class="fotoRiga" src="http://clipart-finder.com/data/mini/go-home.png">
+                            <dt class="labelRiga">Il mio indirizzo è</dt>
+                            <dd itemprop="address" id="indirizzo" class="datoRiga">6166 Fincher Rd</dd>
+                        </div>
+
+                        <div class="rigaTabellaInfo">
+                            <img class="fotoRiga" src="https://www.dbnet.it/wp-content/uploads/2016/05/email.jpg">
+                            <dt class="labelRiga">La mia e-mail è</dt>
+                            <dd itemprop="emailAddress" id="e-mail" class="datoRiga">carrie.montgomery26@example.com</dd>
+                        </div>
+
+                        <div class="rigaTabellaInfo">
+                            <img class="fotoRiga" src="https://www.genitori.it/media/2012/12/biberon.png">
+                            <dt class="labelRiga">La mia data di nascita è</dt>
+                            <dd itemprop="Birthday" id="nascita" class="datoRiga">6/2/1992</dd>
+                        </div>
+                    </dl>
                 </div>
-                 
-                <div class="rigaTabellaInfo">
-                    <img class="fotoRiga" src="https://image.freepik.com/icone-gratis/cornetta-del-telefono_318-25259.jpg">
-                    <dt class="labelRiga">Il mio numero di telefono è</dt>
-                    <dd itemprop="telephoneNumber" id="telefono" class="datoRiga">(932)-885-6729</dd>
-                </div>
-                    
-                <div class="rigaTabellaInfo">
-                    <img class="fotoRiga" src="http://clipart-finder.com/data/mini/go-home.png">
-                    <dt class="labelRiga">Il mio indirizzo è</dt>
-                    <dd itemprop="address" id="indirizzo" class="datoRiga">6166 Fincher Rd</dd>
-                </div>
-                   
-                <div class="rigaTabellaInfo">
-                    <img class="fotoRiga" src="https://www.dbnet.it/wp-content/uploads/2016/05/email.jpg">
-                    <dt class="labelRiga">La mia e-mail è</dt>
-                    <dd itemprop="emailAddress" id="e-mail" class="datoRiga">carrie.montgomery26@example.com</dd>
-                </div>
-                    
-                <div class="rigaTabellaInfo"> 
-                    <img class="fotoRiga" src="https://www.genitori.it/media/2012/12/biberon.png">
-                    <dt class="labelRiga">La mia data di nascita è</dt>
-                    <dd itemprop="Birthday" id="nascita" class="datoRiga">6/2/1992</dd>
-                </div> 
-                </dl>
-            </div>
-        </section>
-        </main>
+            </section> 
+        </main>   
 
         <footer>
-        <div class="infoFooter">
-        <h4>Se vuoi seguici anche su:</h4>
-        </div>
-        <div class="iconeFooter">
-        <a href="https://www.facebook.com/" class="aFooter">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" class="icn">
-        </a>
-        <a href="https://www.instagram.com/" class="aFooter">
-            <img src="https://instagram-brand.com/wp-content/uploads/2016/11/app-icon2.png" class="icn">
-        </a>
-        <a href="https://www.twitter.com/" class="aFooter">
-            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-twitter-256.png" class="icn">
-        </a>
-        <a href="https://plus.google.com/discover" class="aFooter">
-            <img src="https://vignette.wikia.nocookie.net/shopkin/images/d/d1/Google_Plus.png/revision/latest?cb=20141124022257" class="icn">
-        </a>
-        <a href="https://www.linkedin.com/" class="aFooter">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/2000px-Linkedin_icon.svg.png" class="icn">
-        </a>
-        </div>
+            <div class="infoFooter">
+                <h4>Se vuoi seguici anche su:</h4>
+            </div>
+            <div class="iconeFooter">
+                <a href="https://www.facebook.com/" class="aFooter">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" class="icn">
+                </a>
+                <a href="https://www.instagram.com/" class="aFooter">
+                    <img src="https://instagram-brand.com/wp-content/uploads/2016/11/app-icon2.png" class="icn">
+                </a>
+                <a href="https://www.twitter.com/" class="aFooter">
+                    <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-twitter-256.png" class="icn">
+                </a>
+                <a href="https://plus.google.com/discover" class="aFooter">
+                    <img src="https://vignette.wikia.nocookie.net/shopkin/images/d/d1/Google_Plus.png/revision/latest?cb=20141124022257" class="icn">
+                </a>
+                <a href="https://www.linkedin.com/" class="aFooter">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/2000px-Linkedin_icon.svg.png" class="icn">
+                </a>
+            </div> 
         </footer>
 
-    </div>    
+    </div>
 </body>
 
 </html>
