@@ -18,11 +18,11 @@ gulp.task('copiaHtml',function(){
 });
 
 gulp.task('sass', function (){
-    return gulp.src('./scss/*.scss')
+    return gulp.src('./source/sass/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./source/css'));
 });
 
 gulp.task('sass:watch', function (){
-    gulp.watch('./scss/*.scss', ['sass']);
+    gulp.watch('./source/sass/*.scss', ['sass']);
 });
